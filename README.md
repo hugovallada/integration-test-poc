@@ -7,7 +7,7 @@
   
   Ktor: Microframework específico para Kotlin, desenvolvido pela JetBrains, criadora do Kotlin.
   
-  Gradle Kotlin DSL: Gradle 
+  Gradle Kotlin DSL: Gradle é um gerenciador de dependências moderno, que aceita tanto o uso de groovy, quanto kotlin, e permite a programação de suas funcionalidades.
   
   Quarkus: Framework nativo, focado em produtivade e alto desempenho com redução de tempo de inicialização e consumo de memória
   
