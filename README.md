@@ -34,6 +34,10 @@
       Uma pasta build será gerada, acessar e navegar até libs via terminal, nela rodar o comando java -jar api-consumer-1.0.jar [opt] para iniciar o teste.
       [opt] = get (Listagem), post(Inserção), all(mostra tudo e já realiza uma inserção), qualquer outro valor aoresentará uma mensagem de que a opção
       é inválida.
+      
+      OBS: No endpoint de POST, há um log que usa 2 variáveis de ambiente, INTEGRATION_TEST_USERNAME e INTEGRATION_TEST_PASSWORD.
+      Antes de rodar o comando java -jar api-consumer-1.0.jar, no seu terminal set as váriaveis com export NOME_VARIAVEL=VALOR.
+      Variáveis setadas dessa maneira, terão um escopo do terminal, só serão acessadas nesse terminal e até que ele seja reiniciado.
    ```
       
  
