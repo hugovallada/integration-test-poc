@@ -27,7 +27,7 @@
       selecionar Swagger UI e usar o Swagger para testar. 
    ```
    
-   Rodar o fluxo de testtes:
+   Rodar o fluxo de testes:
    ```
       No teste de integração, rodar os comandos gradle clean build ou o wrapper ./gradlew clean build.
       
