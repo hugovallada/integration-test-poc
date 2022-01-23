@@ -1,6 +1,6 @@
 package adapters.gateway
 
-import core.Pokemon
+import core.models.Pokemon
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
