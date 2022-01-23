@@ -2,6 +2,7 @@ package adapters.gateway
 
 import adapters.config.KtorConfig
 import core.Pokemon
+import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
@@ -11,9 +12,7 @@ class GetPokemonGateway {
 
     companion object {
 
-        suspend fun getAllPokemons() {
-            val ktorClient = KtorConfig.ktorImpl()
-
+        suspend fun getAllPokemons(ktorClient: HttpClient) {
             val response: HttpResponse = ktorClient.request("http://localhost:8080/pokemons") {
                 method = HttpMethod.Get
             }

@@ -9,12 +9,11 @@ import io.ktor.client.statement.*
 import io.ktor.http.*
 
 suspend fun main(args: Array<String>) {
+    val ktorClient = KtorConfig.ktorImpl()
 
     when (args[0]) {
-        "ola" -> {
-            val ktor = KtorConfig.ktorImpl()
-
-            val response: HttpResponse = ktor.request("http://localhost:8080/pokemons") {
+        "all" -> {
+            val response: HttpResponse = ktorClient.request("http://localhost:8080/pokemons") {
                 method = HttpMethod.Get
             }
 
@@ -25,15 +24,15 @@ suspend fun main(args: Array<String>) {
                 println(it)
             }
 
-            ktor.request("http://localhost:8080/pokemons") {
+            ktorClient.request("http://localhost:8080/pokemons") {
                 method = HttpMethod.Post
                 contentType(ContentType.Application.Json)
                 body = PokemonRequest("Hugo", "ACTIVE", 200)
             }
 
         }
-        "post" -> CreatePokemonGateway.createPokemon()
-        "get" -> GetPokemonGateway.getAllPokemons()
+        "post" -> CreatePokemonGateway.createPokemon(ktorClient)
+        "get" -> GetPokemonGateway.getAllPokemons(ktorClient)
         else -> println("Opção não encontrada")
     }
 
