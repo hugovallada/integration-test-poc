@@ -1,6 +1,5 @@
 package adapters.gateway
 
-import adapters.config.KtorConfig
 import core.Pokemon
 import io.ktor.client.*
 import io.ktor.client.call.*
