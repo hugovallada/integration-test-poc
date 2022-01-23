@@ -1,10 +1,5 @@
 import adapters.config.KtorConfig
-import adapters.gateway.CreatePokemonGateway
-import adapters.gateway.GetPokemonGateway
-import core.usecase.CreatePokemonUseCase
-import core.usecase.ExecuteAllUseCase
-import core.usecase.ExistsPokemonUseCase
-import core.usecase.GetPokemonUseCase
+import core.usecase.*
 
 suspend fun main(args: Array<String>) {
     val ktorClient = KtorConfig.ktorImpl()
@@ -14,7 +9,7 @@ suspend fun main(args: Array<String>) {
         "post" -> CreatePokemonUseCase.execute(ktorClient)
         "get" -> GetPokemonUseCase.execute(ktorClient)
         "exists" -> ExistsPokemonUseCase.execute(ktorClient)
-        else -> println("Opção não encontrada")
+        else -> InvalidOptionUseCase.execute()
     }
 
     ktorClient.close()
