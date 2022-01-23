@@ -1,13 +1,13 @@
 # Proof of concept: Testes de integração com Kotlin e Ktor.
 
-## Objetivo: Demonstrar a viabilidade da linguagem Kotlin para a criação dos testes de fluxo, aliada ao microframework modular Ktor.
+## Objetivo: Demonstrar a viabilidade da linguagem Kotlin para a criação dos testes de fluxo, aliada ao microframework Ktor.
 
 ### O que são:
   Kotlin: Linguagem moderna, multiparadigma, capaz de executar na JVM, com uma simplicidade comparada ao Python.
   
   Ktor: Microframework específico para Kotlin, desenvolvido pela JetBrains, criadora do Kotlin.
   
-  Gradle Kotlin DSL: Gradle 
+  Gradle Kotlin DSL: Gradle é um gerenciador de dependências moderno, que aceita tanto o uso de groovy, quanto kotlin, e permite a programação de suas funcionalidades.
   
   Quarkus: Framework nativo, focado em produtivade e alto desempenho com redução de tempo de inicialização e consumo de memória
   
