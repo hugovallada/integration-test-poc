@@ -1,6 +1,6 @@
 # Proof of concept: Testes de integração com Kotlin e Ktor.
 
-## Objetivo: Demonstrar a viabilidade da linguagem Kotlin para a criação dos testes de fluxo, aliada ao microframework modular Ktor.
+## Objetivo: Demonstrar a viabilidade da linguagem Kotlin para a criação dos testes de fluxo, aliada ao microframework Ktor.
 
 ### O que são:
   Kotlin: Linguagem moderna, multiparadigma, capaz de executar na JVM, com uma simplicidade comparada ao Python.
